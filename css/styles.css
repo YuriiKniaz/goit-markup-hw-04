@@ -161,6 +161,9 @@ img {
   background-position: center;
   background-size: cover;
   max-width: 1440px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -208,10 +211,6 @@ img {
   width: calc((100% - 72px) / 3);
 }
 
-.advantages-icon {
-  height: 64px;
-  width: 64px;
-}
 .advantages-icon-box {
   padding: 24px 100px 24px 100px;
   margin-bottom: 8px;
@@ -246,7 +245,7 @@ img {
 .possibilities-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -338,8 +337,7 @@ img {
 }
 
 .team-icons {
-  width: 16px;
-  height: 16px;
+  fill: var(--light-color);
 }
 
 /* CUSTOMERS */
@@ -347,7 +345,7 @@ img {
 .customers-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -371,17 +369,17 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #afb1b8;
 }
 
 .customers-list-link:hover,
 .customers-list-link:focus {
   border-color: var(--hover-color);
+  color: var(--hover-color);
 }
 
 .customers-icons {
-  max-height: 52px;
-  max-width: 94px;
-  fill: #8e8f99;
+  fill: currentColor;
 }
 .customers-list-link:hover .customers-icons,
 .customers-list-link:focus .customers-icons {
@@ -426,9 +424,6 @@ img {
   margin-top: 16px;
 }
 
-.footer-social-side {
-}
-
 .footer-social-title {
   color: var(--body-color);
   font-weight: 500;
@@ -463,8 +458,7 @@ img {
 }
 
 .footer-icons {
-  width: 16px;
-  height: 16px;
+  fill: var(--light-color);
 }
 
 /* PORTFOLIO */
@@ -529,8 +523,12 @@ img {
   padding: 32px 0 32px 16px;
 }
 
-.images-list-data:hover,
-.images-list-data:focus {
+.images-list-link {
+  display: block;
+}
+
+.images-list-link:hover,
+.images-list-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
